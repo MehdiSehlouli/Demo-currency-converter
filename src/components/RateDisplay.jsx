@@ -17,10 +17,7 @@ const RateDisplay = ({ onRateUpdate }) => {
         const randomChange = (Math.random() * 0.10) - 0.05; 
         
         setCurrentRate(prevRate => {
-            const newRate = prevRate + randomChange;
-            // set limits 1.15 and 1.05
-            if (newRate < 1.05) return 1.05;
-            if (newRate > 1.15) return 1.15;
+            const newRate = 1.1 + randomChange;
             return newRate;
         });
         
