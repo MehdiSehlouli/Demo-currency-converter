@@ -73,8 +73,9 @@ const RateDisplay = ({ onRateUpdate }) => {
             <LockToggleButton isLocked={isLocked} />
         </div>
 
-        <h2 className="text-sm font-semibold uppercase text-indigo-200 tracking-wider">
-            {isLocked ? 'Taux de change EUR/USD fixé' : 'Taux de change EUR/USD en direct'}
+        <h2 className="text-sm font-semibold uppercase text-indigo-200 tracking-wider pr-6">
+            Taux de change EUR/USD<br />
+            <span className="text-xs">{isLocked ? 'fixé' : 'en direct'}</span>
         </h2>
         
         {/* Always show input field for fixed rate */}
